@@ -289,7 +289,7 @@ behaviors {
              &kp GRAVE          &kp Q          &kp W          &kp F          &kp P          &kp G                                                                                                              &kp J          &kp L          &kp U               &kp Y  &colon_first      &kp EQUAL
  &as_short UNDER MINUS    &hrm LCTL A    &hrm LALT R  &hrm LSHIFT S    &hrm LGUI T          &kp D                                                                                                              &kp H    &hrm RGUI N  &hrm RSHIFT E         &hrm RALT I   &hrm RCTL O        &kp SQT
                  &none          &kp Z          &kp X          &kp C          &kp V          &kp B       &sk MEH_KEY  &kp MISSION_CTRL  &kp APP_WINDOWS   &none                     &none  &sk MEH_KEY          &kp K          &kp M      &kp COMMA  &ellipses_ht 0 DOT      &slashes          &none
-                 &none       &kp LEFT         &kp UP       &kp DOWN      &kp RIGHT                 &bspc_del_lt 5 0         &lt 4 TAB   &kp FIND_MOUSE   &none  &as_long RA(ENTER) ENTER  &lt 3 SPACE                   &as LT LPAR  &as LBRC LBKT       &as RBRC RBKT   &as GT RPAR          &none
+                 &none       &kp LEFT         &kp UP       &kp DOWN      &kp RIGHT                 &bspc_del_lt 5 0         &lt 4 TAB   &kp FIND_MOUSE   &none  &as_long RA(ENTER) ENTER  &lt 3 SPACE                         &none          &none               &none         &none          &none
             >;
         };
 
@@ -317,12 +317,12 @@ behaviors {
 
         layer_Numbers {
             bindings = <
-    &trans    &trans         &trans         &trans    &trans                                                                                                 &trans     &trans    &trans     &trans    &trans
-    &trans    &trans         &trans         &trans    &trans          &trans                                                                 &trans          &trans     &trans    &trans     &trans    &trans
-    &trans  &kp EXCL         &kp AT       &kp HASH  &kp DLLR       &kp PRCNT                                                              &kp CARET        &kp AMPS   &kp STAR  &kp PIPE  &kp EQUAL    &trans
- &kp MINUS    &kp N1         &kp N2         &kp N3    &kp N4          &kp N5                                                                 &kp N6          &kp N7     &kp N8    &kp N9     &kp N0  &kp PLUS
-    &trans  &kp LPAR  &as LBRC LBKT  &as RBRC RBKT  &kp RPAR  &bd_ht 0 LS(B)  &sk LGUI  &sk LALT  &sk LCTRL  &trans  &trans  &trans  &kd_ht 0 LS(K)  &md_ht 0 LS(M)  &kp COMMA   &kp DOT   &kp FSLH    &trans
-    &trans    &trans         &trans         &trans    &trans                  &kp BSPC   &kp TAB  &kp SPACE  &trans  &trans  &trans                          &trans     &trans    &trans     &trans    &trans
+    &trans    &trans    &trans    &trans    &trans                                                                                                 &trans     &trans    &trans     &trans    &trans
+    &trans    &trans    &trans    &trans    &trans          &trans                                                                 &trans          &trans     &trans    &trans     &trans    &trans
+    &trans  &kp EXCL    &kp AT  &kp HASH  &kp DLLR       &kp PRCNT                                                              &kp CARET        &kp AMPS   &kp STAR  &kp PIPE  &kp EQUAL    &trans
+ &kp MINUS    &kp N1    &kp N2    &kp N3    &kp N4          &kp N5                                                                 &kp N6          &kp N7     &kp N8    &kp N9     &kp N0  &kp PLUS
+    &trans  &kp LPAR  &kp LBKT  &kp RBKT  &kp RPAR  &bd_ht 0 LS(B)  &sk LGUI  &sk LALT  &sk LCTRL  &trans  &trans  &trans  &kd_ht 0 LS(K)  &md_ht 0 LS(M)  &kp COMMA   &kp DOT   &kp FSLH    &trans
+    &trans    &trans    &trans    &trans    &trans                  &kp BSPC   &kp TAB  &kp SPACE  &trans  &trans  &trans                          &trans     &trans    &trans     &trans    &trans
             >;
         };
 
