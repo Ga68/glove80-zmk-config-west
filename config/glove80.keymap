@@ -189,8 +189,8 @@ combos {
 
     // Left hand, other
     COMBO(cmd_t         , &kp LG(T)               ,             38 39            , COMBO_TERM_NORMAL)
-    COMBO(cmd_p         , &kp LG(P)               , 26    36                     , COMBO_TERM_NORMAL)
-    COMBO(cmd_shift_p   , &kp LG(LS(P))           , 26 27 36                     , COMBO_TERM_NORMAL)
+    COMBO(cmd_p         , &kp LG(P)               ,    26 36                     , COMBO_TERM_NORMAL)
+    COMBO(cmd_shift_p   , &kp LG(LS(P))           , 25 26 36                     , COMBO_TERM_NORMAL)
     COMBO(clipboard_hist, &kp CLIPBOARD_HIST      ,       36                49 50, COMBO_TERM_LONG  )
     COMBO(one_pw        , &kp ONE_PASSWORD        ,          37 38       48      , COMBO_TERM_LONG  )
     COMBO(grave         , &triple_grave_ht 0 GRAVE,          37       47         , COMBO_TERM_LONG  )
