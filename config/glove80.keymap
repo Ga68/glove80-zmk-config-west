@@ -325,12 +325,12 @@ behaviors {
 
         layer_Window_Mgmt {
             bindings = <
- &trans       &trans       &trans                    &trans       &trans                                                                           &trans  &trans  &trans  &trans  &trans
- &trans       &trans       &trans                    &trans       &trans           &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &kp MEH(N0)  &kp MEH(N7)               &kp MEH(N8)  &kp MEH(N9)  &kp MEH(PERIOD)                                                  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &kp MEH(N0)  &kp MEH(N4)  &hrm FULL_SCREEN MEH(N5)  &kp MEH(N6)  &kp MEH(PERIOD)                                                  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &kp MEH(N0)  &kp MEH(N1)               &kp MEH(N2)  &kp MEH(N3)  &kp MEH(PERIOD)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans       &trans       &trans                    &trans       &trans                   &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+ &trans       &trans       &trans                   &trans       &trans                                                                           &trans  &trans  &trans  &trans  &trans
+ &trans       &trans       &trans                   &trans       &trans           &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &kp MEH(N0)  &kp MEH(N7)              &kp MEH(N8)  &kp MEH(N9)  &kp MEH(PERIOD)                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &kp MEH(N0)  &kp MEH(N4)  &as FULL_SCREEN MEH(N5)  &kp MEH(N6)  &kp MEH(PERIOD)                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &kp MEH(N0)  &kp MEH(N1)              &kp MEH(N2)  &kp MEH(N3)  &kp MEH(PERIOD)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans       &trans       &trans                   &trans       &trans                   &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
