@@ -146,11 +146,14 @@
         timeout-ms = <MS>; \
     };
 
+#define MACRO_WAIT_TIME 30
 #define ZMAC(name,...) \
     name: name { \
             label = ZMK_MACRO_STRINGIFY(ZM_ ## name); \
             compatible = "zmk,behavior-macro"; \
             #binding-cells = <0>; \
+            wait-ms = <MACRO_WAIT_TIME>; \
+            tap-ms = <MACRO_WAIT_TIME>; \
             bindings = __VA_ARGS__ ; \
         };
 
