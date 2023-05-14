@@ -178,14 +178,14 @@ combos {
     COMBO(screen_capture, &kp SCREEN_CAPTURE, 23 24 25   , COMBO_TERM_LONG  )
 
     // Left hand, bottom row
-    COMBO(redo       , &kp REDO       , 47 48 49   , COMBO_TERM_LONG)
-    COMBO(plain_paste, &kp PLAIN_PASTE,    48 49 50, COMBO_TERM_LONG)
     COMBO(undo       , &kp UNDO       , 47 48      , COMBO_TERM_LONG)
+    COMBO(redo       , &kp REDO       , 47 48 49   , COMBO_TERM_LONG)
     COMBO(cut        , &kp CUT        , 47    49   , COMBO_TERM_LONG)
-    COMBO(select_all , &kp SELECT_ALL , 47       50, COMBO_TERM_LONG)
     COMBO(copy       , &kp COPY       ,    48 49   , COMBO_TERM_LONG)
-    COMBO(app_switch , &kp APP_SWITCH ,    48    50, COMBO_TERM_LONG)
     COMBO(paste      , &kp PASTE      ,       49 50, COMBO_TERM_LONG)
+    COMBO(plain_paste, &kp PLAIN_PASTE,    48 49 50, COMBO_TERM_LONG)
+    COMBO(select_all , &kp SELECT_ALL , 47       50, COMBO_TERM_LONG)
+    COMBO(app_switch , &kp APP_SWITCH ,    48    50, COMBO_TERM_LONG)
 
     // Left hand, other
     COMBO(cmd_t         , &kp LG(T)               ,             38 39            , COMBO_TERM_NORMAL)
@@ -202,8 +202,8 @@ combos {
     COMBO(capsword, &caps_word       ,    30 31, COMBO_TERM_NORMAL)
 
     // Right hand, bottom row
-    COMBO(inv_question, &kp INV_QUESTION , 59 60      , COMBO_TERM_LONG  )
     COMBO(sticky_shift, &skqr RIGHT_SHIFT,    60 61   , COMBO_TERM_LONG  )
+    COMBO(inv_question, &kp INV_QUESTION , 59 60      , COMBO_TERM_LONG  )
     COMBO(question    , &kp QUESTION     ,       61 62, COMBO_TERM_LONG  )
     COMBO(colon       , &kp COLON        , 59    61   , COMBO_TERM_NORMAL)
     COMBO(left_brace  , &kp LBRC         , 59 60 61   , COMBO_TERM_LONG  )
