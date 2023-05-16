@@ -188,13 +188,14 @@ combos {
     COMBO(app_switch , &kp APP_SWITCH ,    48    50, COMBO_TERM_LONG)
 
     // Left hand, other
-    COMBO(cmd_t         , &kp LG(T)               ,             38 39            , COMBO_TERM_NORMAL)
-    COMBO(cmd_p         , &kp LG(P)               ,    26 36                     , COMBO_TERM_NORMAL)
-    COMBO(cmd_shift_p   , &kp LG(LS(P))           , 25 26 36                     , COMBO_TERM_NORMAL)
-    COMBO(clipboard_hist, &kp CLIPBOARD_HIST      ,       36                49 50, COMBO_TERM_LONG  )
-    COMBO(one_pw        , &kp ONE_PASSWORD        ,          37 38       48      , COMBO_TERM_LONG  )
-    COMBO(grave         , &triple_grave_ht 0 GRAVE,          37       47         , COMBO_TERM_LONG  )
-    COMBO(tilde         , &kp TILDE               ,       36          47         , COMBO_TERM_LONG  )
+    COMBO(cmd_t         , &kp LG(T)               ,             38 39               , COMBO_TERM_NORMAL)
+    COMBO(cmd_p         , &kp LG(P)               ,    26 36                        , COMBO_TERM_NORMAL)
+    COMBO(cmd_shift_p   , &kp LG(LS(P))           , 25 26 36                        , COMBO_TERM_NORMAL)
+    COMBO(cmd_b         , &kp LG(B)               ,             38                51, COMBO_TERM_NORMAL)
+    COMBO(clipboard_hist, &kp CLIPBOARD_HIST      ,       36                49 50   , COMBO_TERM_LONG  )
+    COMBO(one_pw        , &kp ONE_PASSWORD        ,          37 38       48         , COMBO_TERM_LONG  )
+    COMBO(grave         , &triple_grave_ht 0 GRAVE,          37       47            , COMBO_TERM_LONG  )
+    COMBO(tilde         , &kp TILDE               ,       36          47            , COMBO_TERM_LONG  )
 
     // Right hand, upper row
     COMBO(quote   , &kp DOUBLE_QUOTES, 29 30   , COMBO_TERM_NORMAL)
@@ -208,10 +209,8 @@ combos {
     COMBO(colon       , &kp COLON        , 59    61   , COMBO_TERM_NORMAL)
     COMBO(left_brace  , &kp LBRC         , 59 60 61   , COMBO_TERM_LONG  )
     COMBO(right_brace , &kp RBRC         ,    60 61 62, COMBO_TERM_LONG  )
-
-    // Right hand, very bottom row
-    COMBO(lte_combo, &lte, 75 76      , COMBO_TERM_LONG)
-    COMBO(gte_combo, &gte,       77 78, COMBO_TERM_LONG)
+    COMBO(lte_combo   , &lte_ht 0 LT     , 59 60    62, COMBO_TERM_LONG  )
+    COMBO(gte_combo   , &gte_ht 0 GT     , 59    61 62, COMBO_TERM_LONG  )
 
     // Right hand, other
     COMBO(cmd_n    , &kp RG(N)    ,       40 41            , COMBO_TERM_NORMAL)
@@ -241,6 +240,8 @@ behaviors {
     HT(triple_grave_ht, triple_grave_hold_tap   , HT_NORMAL, <&triple_grave &kp>)
     HT(ellipses_ht    , ellipses_hold_tap       , HT_NORMAL, <&ellipses &kp>    )
     HT(bspc_del_lt    , bspc_del_layer_tap      , HT_NORMAL, <&mo &bspc_del>    )
+    HT(lte_ht         , less_than_hold_tap      , HT_NORMAL, <&lte &kp>         )
+    HT(gte_ht         , greater_than_hold_tap   , HT_NORMAL, <&gte &kp>         )
 
     bspc_del: backspace_delete {
         compatible = "zmk,behavior-mod-morph";
