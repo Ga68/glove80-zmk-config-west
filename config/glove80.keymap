@@ -215,7 +215,7 @@ combos {
     // Right hand, other
     COMBO(cmd_n    , &kp RG(N)    ,       40 41            , COMBO_TERM_NORMAL)
     COMBO(cmd_l    , &kp RG(L)    , 29             43      , COMBO_TERM_NORMAL)
-    COMBO(equal    , &kp EQUAL    ,    30             44   , COMBO_TERM_NORMAL)
+    COMBO(equal    , &kp EQUAL    ,    30             44   , COMBO_TERM_SHORT )
     COMBO(semicolon, &kp SEMICOLON,             42       62, COMBO_TERM_NORMAL)
 };
 
