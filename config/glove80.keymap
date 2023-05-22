@@ -198,19 +198,19 @@ combos {
     COMBO(tilde         , &kp TILDE               ,       36          47            , COMBO_TERM_LONG  )
 
     // Right hand, upper row
-    COMBO(quote   , &kp DOUBLE_QUOTES, 29 30   , COMBO_TERM_NORMAL)
-    COMBO(plus    , &kp PLUS         , 29    31, COMBO_TERM_NORMAL)
-    COMBO(capsword, &caps_word       ,    30 31, COMBO_TERM_NORMAL)
+    COMBO(quote   , &double_quote_ht 0 DOUBLE_QUOTES, 29 30   , COMBO_TERM_NORMAL)
+    COMBO(plus    , &kp PLUS                        , 29    31, COMBO_TERM_NORMAL)
+    COMBO(capsword, &caps_word                      ,    30 31, COMBO_TERM_NORMAL)
 
     // Right hand, bottom row
-    COMBO(sticky_shift, &skqr RIGHT_SHIFT,    60 61   , COMBO_TERM_LONG  )
-    COMBO(inv_question, &kp INV_QUESTION , 59 60      , COMBO_TERM_LONG  )
-    COMBO(question    , &kp QUESTION     ,       61 62, COMBO_TERM_LONG  )
-    COMBO(colon       , &kp COLON        , 59    61   , COMBO_TERM_NORMAL)
-    COMBO(left_brace  , &kp LBRC         , 59 60 61   , COMBO_TERM_LONG  )
-    COMBO(right_brace , &kp RBRC         ,    60 61 62, COMBO_TERM_LONG  )
-    COMBO(lte_combo   , &lte_ht 0 LT     , 59 60    62, COMBO_TERM_LONG  )
-    COMBO(gte_combo   , &gte_ht 0 GT     , 59    61 62, COMBO_TERM_LONG  )
+    COMBO(sticky_shift, &skqr RIGHT_SHIFT            ,    60 61   , COMBO_TERM_LONG  )
+    COMBO(inv_question, &questions_ht 0 INV_QUESTION , 59 60      , COMBO_TERM_LONG  )
+    COMBO(question    , &kp QUESTION                 ,       61 62, COMBO_TERM_LONG  )
+    COMBO(colon       , &kp COLON                    , 59    61   , COMBO_TERM_NORMAL)
+    COMBO(left_brace  , &kp LBRC                     , 59 60 61   , COMBO_TERM_LONG  )
+    COMBO(right_brace , &kp RBRC                     ,    60 61 62, COMBO_TERM_LONG  )
+    COMBO(lte_combo   , &lte_ht 0 LT                 , 59 60    62, COMBO_TERM_LONG  )
+    COMBO(gte_combo   , &gte_ht 0 GT                 , 59    61 62, COMBO_TERM_LONG  )
 
     // Right hand, other
     COMBO(cmd_n    , &kp RG(N)    ,       40 41            , COMBO_TERM_NORMAL)
@@ -222,26 +222,33 @@ combos {
 macros {
     ZMAC(triple_grave, <&kp GRAVE &kp GRAVE &kp GRAVE>)
     ZMAC(ellipses    , <&kp DOT &kp DOT &kp DOT>      )
-    ZMAC(lte         , <&kp LT &kp EQUAL>             )
-    ZMAC(gte         , <&kp GT &kp EQUAL>             )
-    ZMAC(m_dollars   , <&kp M &kp D &kp SLASH>        )
-    ZMAC(k_dollars   , <&kp K &kp D &kp SLASH>        )
-    ZMAC(b_dollars   , <&kp B &kp D &kp SLASH>        )
+    
+    ZMAC(lte, <&kp LT &kp EQUAL>)
+    ZMAC(gte, <&kp GT &kp EQUAL>)
+    
+    ZMAC(m_dollars, <&kp M &kp D &kp SLASH>)
+    ZMAC(k_dollars, <&kp K &kp D &kp SLASH>)
+    ZMAC(b_dollars, <&kp B &kp D &kp SLASH>)
+
+    ZMAC(question_marks, <&kp INV_QUESTION &kp QUESTION &kp LEFT>      )
+    ZMAC(double_quotes , <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp LEFT>)
 };
 
 behaviors {
-    HT(as             , auto_shift              , HT_NORMAL, <&kp &kp>          )
-    HT(as_long        , auto_shift_long         , HT_LONG  , <&kp &kp>          )
-    HT(as_short       , auto_shift_short        , HT_SHORT , <&kp &kp>          )
-    HT(hrm            , homerow_mods            , HT_NORMAL, <&kp &kp>          )
-    HT(bd_ht          , billion_dollar_hold_tap , HT_NORMAL, <&b_dollars &kp>   )
-    HT(md_ht          , million_dollar_hold_tap , HT_NORMAL, <&m_dollars &kp>   )
-    HT(kd_ht          , thousand_dollar_hold_tap, HT_NORMAL, <&k_dollars &kp>   )
-    HT(triple_grave_ht, triple_grave_hold_tap   , HT_NORMAL, <&triple_grave &kp>)
-    HT(ellipses_ht    , ellipses_hold_tap       , HT_NORMAL, <&ellipses &kp>    )
-    HT(bspc_del_lt    , bspc_del_layer_tap      , HT_NORMAL, <&mo &bspc_del>    )
-    HT(lte_ht         , less_than_hold_tap      , HT_NORMAL, <&lte &kp>         )
-    HT(gte_ht         , greater_than_hold_tap   , HT_NORMAL, <&gte &kp>         )
+    HT(as             , auto_shift              , HT_NORMAL, <&kp &kp>            )
+    HT(as_long        , auto_shift_long         , HT_LONG  , <&kp &kp>            )
+    HT(as_short       , auto_shift_short        , HT_SHORT , <&kp &kp>            )
+    HT(hrm            , homerow_mods            , HT_NORMAL, <&kp &kp>            )
+    HT(bd_ht          , billion_dollar_hold_tap , HT_NORMAL, <&b_dollars &kp>     )
+    HT(md_ht          , million_dollar_hold_tap , HT_NORMAL, <&m_dollars &kp>     )
+    HT(kd_ht          , thousand_dollar_hold_tap, HT_NORMAL, <&k_dollars &kp>     )
+    HT(triple_grave_ht, triple_grave_hold_tap   , HT_NORMAL, <&triple_grave &kp>  )
+    HT(ellipses_ht    , ellipses_hold_tap       , HT_NORMAL, <&ellipses &kp>      )
+    HT(bspc_del_lt    , bspc_del_layer_tap      , HT_NORMAL, <&mo &bspc_del>      )
+    HT(lte_ht         , less_than_hold_tap      , HT_NORMAL, <&lte &kp>           )
+    HT(gte_ht         , greater_than_hold_tap   , HT_NORMAL, <&gte &kp>           )
+    HT(questions_ht   , question_marks_hold_tap , HT_NORMAL, <&question_marks &kp>)
+    HT(double_quote_ht, double_quotes_hold_tap  , HT_NORMAL, <&double_quotes &kp> )
 
     bspc_del: backspace_delete {
         compatible = "zmk,behavior-mod-morph";
